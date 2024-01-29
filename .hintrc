@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "defaults",
+    "not ie 11",
+    "not ie <= 11"
+  ],
+  "hints": {
+    "compat-api/css": "off"
+  }
+}

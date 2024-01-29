@@ -1,0 +1,80 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+
+
+
+.formulario{
+
+
+    
+    &__heading{
+        color: v.$blanco;
+        text-align: center;
+
+    }
+
+    &__grid{
+        
+        @include m.tablet { 
+            @include m.grid(2,v.$separacion)
+         }
+    }
+
+    &__contenido{
+        background-color: v.$primario;
+        padding: v.$separacion;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+    }
+
+
+    &__campo{
+        margin-bottom: 2rem;
+    }
+
+    &__label{
+        text-transform: uppercase;
+        color: v.$blanco;
+        display: block;
+        margin: 1rem 0;
+    }
+
+    &__input{
+        width: 100%;
+        padding: 1.5rem;
+        border: none;
+
+
+
+    }
+
+    &__submit{
+        
+       @include m.boton(v.$secundario,v.$blanco);
+       @include m.tablet { 
+        width: 100%;
+      
+        }
+       
+    }
+
+
+
+    &__imagen-contenedor{
+        margin-top: v.$separacion;
+
+
+    }
+
+    &__imagen{
+        width: 30rem;
+        margin: 0 auto;
+        @include m.desktop { 
+            width: 100%;
+         }
+    }
+}

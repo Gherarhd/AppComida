@@ -1,0 +1,36 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+
+.contactos{
+
+    &__listas{
+        padding-left: 0;
+    }
+    &__lista{
+        list-style: none;
+       color: v.$blanco;
+       margin-bottom: 1rem;
+    }
+
+    &__link{
+        color: v.$primario;
+    }
+
+    &__red{
+        padding-left: 5rem;
+    }
+    &__red{
+        list-style: none;
+        margin-top: 1rem;
+     
+    }
+    &__enlace{
+       color: v.$blanco;
+       font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+
+}
